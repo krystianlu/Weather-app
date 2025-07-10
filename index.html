@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>Weather App</title>
+  </head>
+  <body class="min-h-screen bg-linear-to-t from-blue-100 to to-blue-300">
+    <div
+      class="flex flex-col justify-center justify-self-center m-8 bg-blue-500 max-w-2xl min-w-1/3 px-4 py-9 rounded-2xl font-sans"
+    >
+      <div class="flex flex-row justify-center">
+        <input
+          type="text"
+          placeholder="enter city name"
+          spellcheck="false"
+          class="input bg-white rounded-3xl px-6 py-3 mx-2"
+        />
+        <div
+          class="searchBtn py-2 px-3.5 bg-white rounded-full flex justify-center items-center mx-2 cursor-pointer"
+        >
+          <img src="/src/images/search.png" alt="" class="w-5 h-5 m-0" />
+        </div>
+      </div>
+
+      <img src="" alt="" class="image w-46 place-self-center" />
+
+      <h1 class="temp text-7xl text-white font-bold text-center mb-3"></h1>
+      <h2 class="city text-4xl text-white text-center mb-8"></h2>
+
+      <div class="details flex flex-row justify-evenly text-white">
+        <div class="col flex flex-row items-center">
+          <img src="/src/images/wind.png" alt="" class="w-12 h-12" />
+          <div class="flex flex-col px-1.5 align-middle">
+            <p class="wind text-2xl font-medium"></p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+
+        <div class="col flex flex-row items-center">
+          <img src="/src/images/humidity.png" alt="" class="w-12 h-12" />
+          <div class="flex flex-col px-1.5">
+            <p class="humidity text-2xl font-medium"></p>
+            <p>Humidity</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

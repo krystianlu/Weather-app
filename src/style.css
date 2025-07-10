@@ -1,0 +1,4 @@
+@import "tailwindcss";
+.details {
+display: none;
+}
