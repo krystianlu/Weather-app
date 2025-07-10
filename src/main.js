@@ -21,17 +21,17 @@ async function checkWeather(city) {
   humidity.innerHTML = data.main.humidity + "%";
 
   if (data.weather[0].main == "Clouds") {
-    image.src = "/src/images/clouds.png";
+    image.src = "/images/clouds.png";
   } else if (data.weather[0].main == "Clear") {
-    image.src = "/src/images/clear.png";
+    image.src = "/images/clear.png";
   } else if (data.weather[0].main == "Drizzle") {
-    image.src = "/src/images/drizzle.png";
+    image.src = "/images/drizzle.png";
   } else if (data.weather[0].main == "Mist") {
-    image.src = "/src/images/mist.png";
+    image.src = "/images/mist.png";
   } else if (data.weather[0].main == "Rain") {
-    image.src = "/src/images/rain.png";
+    image.src = "/images/rain.png";
   } else if (data.weather[0].main == "Snow") {
-    image.src = "/src/images/snow.png";
+    image.src = "/images/snow.png";
   }
 }
 searchBtn.addEventListener("click", () => {
